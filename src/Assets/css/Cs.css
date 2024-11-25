@@ -1,0 +1,176 @@
+.cs-container{
+    position: relative;
+    display: flex;
+    gap: 2vw;
+}
+.cs-container .img-fluid{
+    width: 100%;
+    height: auto;
+}
+.imgHolder{
+    position: relative;
+    width: 35%;
+}
+.custom-btn1{
+    position: absolute;
+    top: 90%;
+    left: 38%;
+}
+.custom-btn2{
+    position: absolute;
+    top: 105%;
+    left: 36.5%;
+    border: none;
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+a{
+    color: #0f75bd;
+    text-decoration: none;
+    font-weight: bolder;
+}
+@media (min-width: 1025px){
+    .cs-container{
+        margin: 2%;
+        text-align: center;
+    }
+    .cs-container .img-fluid{
+        border-radius: 15px;
+        width: 100%;
+        height: auto;
+        margin: 8% 0% 8% 0%;
+    }
+    .custom-btn1{
+        border: 1px solid #0f75bd;
+        background-color: transparent;
+        color: #fff;
+        width: 100%;
+        height:70px ;
+        top:65%;
+        left: 0%;
+        text-transform: capitalize;
+
+    }
+    .custom-btn2{
+        border: none;
+        background-color: transparent;
+        color: #fff;
+        width: 100%;
+        height:80px ;
+        position: absolute;
+        top: 93%;
+        left: 0%;
+        text-transform: uppercase;
+        font-weight: bold;
+    }    
+}
+@media (min-width: 800px) and (max-width: 1024.999px){
+    .cs-container{
+        margin: 2%;
+        text-align: center;
+    }
+    .cs-container .img-fluid{
+        border-radius: 15px;
+        width: 100%;
+        height: auto;
+        margin: 8% 0% 8% 0%;
+    }
+    .custom-btn1{
+        border: 1px solid #0f75bd;
+        background-color: transparent;
+        color: #fff;
+        width: 100%;
+        height:40px ;
+        top:65%;
+        left: 0%;
+        text-transform: capitalize;
+
+    }
+    .custom-btn2{
+        border: none;
+        background-color: transparent;
+        color: #fff;
+        width: 100%;
+        height:40px ;
+        position: absolute;
+        top: 93%;
+        left: 0%;
+        text-transform: uppercase;
+        font-weight: bold;
+    }    
+}
+@media (min-width: 400px) and (max-width: 651.399px){
+    .cs-container{
+        display: block;
+        margin: 2%;
+        text-align: center;
+    }
+    .cs-container .img-fluid{
+        border-radius: 15px;
+        width: 100%;
+        height: auto;
+        margin: 8% 0% 8% 0%;
+    }
+    .imgHolder{
+        position: relative;
+        width: 50%;
+        left: 25%;
+    }
+    .custom-btn1{
+        border-radius: 15px;
+        border: 1px solid #0f75bd;
+        background-color: transparent;
+        color: #fff;
+        width: 100%;
+        height:40px ;
+        position: absolute;
+        top:65%;
+        left: 0%;
+        text-transform: capitalize;
+
+    }
+    .custom-btn2{
+        background-color: transparent;
+        width: 100%;
+        height:40px ;
+        top: 93%;
+        left: 0%;
+        padding-bottom: 10px;
+    }    
+}
+@media (min-width: 651.4px) and (max-width: 799.999px) {
+    .cs-container{
+        margin: 2%;
+        text-align: center;
+    }
+    .cs-container .img-fluid{
+        border-radius: 15px;
+        width: 100%;
+        height: auto;
+        margin: 8% 0% 8% 0%;
+    }
+    .custom-btn1{
+        border: 1px solid #0f75bd;
+        background-color: transparent;
+        color: #fff;
+        width: 100%;
+        height:40px ;
+        top:65%;
+        left: 0%;
+        text-transform: capitalize;
+
+    }
+    .custom-btn2{
+        border: none;
+        background-color: transparent;
+        color: #fff;
+        width: 100%;
+        height:40px ;
+        position: absolute;
+        top: 93%;
+        left: 0%;
+        text-transform: uppercase;
+        font-weight: bold;
+    }    
+}

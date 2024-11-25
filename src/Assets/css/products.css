@@ -1,0 +1,106 @@
+
+.btn{
+    text-transform:capitalize ;
+    font-size:1.5vw ;
+    margin-right: 4%;
+    margin-left: 1%;
+    width: 15vw;
+    height: 8vh;
+    position: relative;
+    top: 15px;
+}
+.productsH3{
+    display: block;
+}
+
+/* Larger devices starts here */
+@media (min-width: 1025px) {
+    .btn{
+        width: 18vw;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1150.999px) {
+    .btn{
+        width: 17.8vw;
+    }
+}
+
+/* Ends here */
+
+/* Large tablets starts here */
+
+@media (min-width: 800px) and (max-width: 1024.999px) {
+    .btn{
+        width: 17vw;
+    }
+}
+
+@media (min-width: 868px) and (max-width: 1024.999px) {
+    .btn{
+        width: 17.2vw;
+    }
+}
+
+@media (min-width: 940px) and (max-width: 1024.999px) {
+    .btn{
+        width: 17.5vw;
+    }
+}
+
+/* Ends here */
+
+/* for small devices starts here */
+
+@media (min-width: 400px) and (max-width: 651.399px) {
+    .btn{
+        width: 15vw;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 580.999px) {
+    .btn{
+        width: 15.5vw;
+    }
+
+}
+
+@media (min-width: 581px) and (max-width: 651.399px) {
+    .btn{
+        width: 16vw;
+    }
+
+}
+
+/* Ends here */
+
+/* Small tablets starts here */
+
+@media (min-width: 651.4px) and (max-width: 799.999px) {
+    .btn{
+        width: 16.5vw;
+    }
+
+}
+
+@media (min-width: 680px) and (max-width: 720.999px) {
+    .btn{
+        width: 16.5vw;
+    }
+
+}
+
+@media (min-width: 721px) and (max-width: 760.999px) {
+    .btn{
+        width: 16.8vw;
+    }
+
+}
+
+@media (min-width: 761px) and (max-width: 799.999px) {
+    .btn{
+        width: 17vw;
+    }
+}
+
+/* Ends here */

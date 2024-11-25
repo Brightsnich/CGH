@@ -1,0 +1,86 @@
+:root{
+    --pexel_size: 0px;
+    --px_vw: 2.1vw;
+
+
+    --card_img_height:230px;
+    --card_width:200px;
+
+    --margin: 0px;
+    --height:600px;
+    --top: 0px;
+    --right: 0px;
+}
+
+.about{
+    position: relative;
+}
+.aboutContents{
+    position:absolute;
+    top: var(--pexel_size);
+}
+.p1{
+    font-style: italic;
+    margin-right:calc(var(--pexel_size) + 50px) ;
+    margin-left:calc(var(--pexel_size) + 50px) ;
+    font-size: var(--px_vw);
+}
+
+.card img{
+    height: var(--card_img_height);
+    border: 2px solid #0f75bd;
+    border-bottom: 10px solid #0f75bd ;
+    border-top: 10px solid #0f75bd ;
+}
+.card{
+    width: var(--card_width);
+    margin-top: calc(var(--margin) + 2%);
+}
+.card-body{
+    height: calc(var(--card_img_height) / 2.8);
+    position: relative;
+}
+.card-body p, h5{
+    margin-top: calc(var(--margin) + -3%);
+    line-height: calc(var(--pexel_size) + 15px);
+}
+.about_container{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    top: 20px;
+    margin: 0% 3%;
+}
+.about_h3{
+    position: absolute;
+    top: calc(var(--top) + -10%);
+    right: calc(var(--right) + 51%);
+    width: calc(var(--px_vw) * 20);
+}
+
+@media (min-width: 400px) and (max-width: 662px){
+    .about_container{
+        top: 40px;
+        margin: 0% 7%;
+    }
+    .about_h3{
+        top: calc(var(--top) + -6%);
+        right: calc(var(--right) + 43%);
+        width: calc(var(--px_vw) * 20);
+    }
+}
+@media (min-width: 662.009px) and (max-width: 799.999px) {
+    .about_h3{
+        top: calc(var(--top) + -6%);
+        right: calc(var(--right) + 47%);
+        width: calc(var(--px_vw) * 20);
+    }
+}
+@media (min-width: 800px) and (max-width: 1024px){
+    .about_h3{
+        top: calc(var(--top) + -7%);
+        right: calc(var(--right) + 48%);
+        width: calc(var(--px_vw) * 20);
+    }
+}

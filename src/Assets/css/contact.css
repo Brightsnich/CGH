@@ -1,0 +1,85 @@
+:root {
+    --footerHeight: 100vh;
+    --footerWidth: 100vw;
+}
+
+.contact {
+    font-family: "Raleway" 'Courier New', Courier, monospace;
+    position: relative;
+    background-color: #000;
+    height: calc(var(--footerHeight) /1.5 ) ;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    font-weight: lighter;
+}
+
+.box {
+    position: relative;
+    margin: 0% 30% 3% 30%;
+}
+
+.footerText {
+    font-size: 1.6vw;
+    line-height: 10px;
+}
+
+.contact form {
+    position: relative;
+    left: -5%;
+}
+
+.contact input {
+    height: calc(var(--footerHeight) / 12);
+    width: calc(var(--footerWidth) / 2.8);
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    position: absolute;
+    left: 33%;
+}
+.error{
+    background-color: #fff;
+}
+
+.contact button {
+    cursor: pointer;
+    font-size: 122%;
+    font-weight: bold;
+    background-color: #0f75bd;
+    height: calc(var(--footerHeight) / 11);
+    width: auto;
+    position: absolute;
+    text-align: center;
+    border-radius: 15px;
+    right: 23%;
+}
+
+ion-icon {
+    position: relative;
+    font-size: 24px;
+    top: 13%;
+    color: #fff;
+}
+
+@media (max-width: 799px) {
+    .contact input {
+        position: relative;
+        left: 5%;
+        border-radius: 15px;
+        width: calc(var(--footerWidth) / 2.5);
+    }
+
+    .contact button {
+        bottom: -80%;
+        left: 35%;
+        right: 25%;
+    }
+    .b{
+        line-height: 10px;
+    }
+    .footerText {
+        font-size: 1.8vw;
+        line-height: 11px;
+        margin: 0;
+    }
+}
