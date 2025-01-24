@@ -150,7 +150,7 @@ body {
 /* for small devices starts here */
 @media (max-width: 399.999px){
     #home {
-        height: 50vh;
+        height: 20vh;
     }
     #about {
         top: 110vw;
