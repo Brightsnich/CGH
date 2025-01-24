@@ -150,19 +150,19 @@ body {
 /* for small devices starts here */
 @media (max-width: 399.999px){
     #home {
-        height: 60vh;
+        height: 62vh;
     }
     #about {
-        top: 150vw;
+        top: 110vw;
     }
     #products {
-        top: 1960px;
+        top: 1900px;
     }
     /* #sizes {
         top: 460vw;
     } */
     #testimonials {
-        margin-top:335vw;
+        margin-top:270vw;
         margin-bottom: 80px;
     }
 }
