@@ -26,10 +26,12 @@ function Corpshirts() {
             <div className="cs-container" id="corpshirts">
                 {csContents.map((content, index) => {
                     return <div className="imgHolder">
-                    <img src={content.imgURL} alt="" className="img-fluid" />
+                    <img src={content.imgURL} alt="" className="imgFluid" />
                         <button className="custom-btn1"><a href="https://wa.me/c/2349065813508">
                             {content.firstButton}
                         </a> </button>
+                        <div className="darkOverlay"></div>
+
                         <button className="custom-btn2">{content.secondButton}</button>
                     </div>
                     

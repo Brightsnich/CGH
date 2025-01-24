@@ -3,32 +3,22 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import pexels1 from "../Assets/images/pexels1.jpg";
-import pexels2 from "../Assets/images/pexels2.jpg";
-import pexels3 from "../Assets/images/pexels3.jpg";
-import pexels4 from "../Assets/images/pexels4.jpg";
-import pexels5 from "../Assets/images/about.jpg";
 import "../Assets/css/slider.css"
 
 function Testimonials() {
     const testimonies = [{
-        img: pexels1,
         text: "Sleek styles, fast shipping, and friendly customer service. A perfect online shopping experience!"
     },
     {
-        img: pexels2,
         text: "High-quality fashion at affordable prices. Easy returns and secure checkout. Love it!"
     },
     {
-        img: pexels3,
         text: "Found my new favorite online store! Trendy clothes, great deals, and excellent customer support"
     },
     {
-        img: pexels4,
         text: "The clothes fit perfectly and the quality is amazing. Fast shipping and easy returns too!"
     },
     {
-        img: pexels5,
         text: "The customer service was exceptional! They helped me find the perfect outfit. Highly recommend!"
     }
     ];
@@ -83,7 +73,6 @@ function Testimonials() {
             <Slider {...settings}>
             {testimonies.map((testimony, index) => {
                 return <Testimonyslider
-                    imgUrl={testimony.img}
                     testimony={testimony.text}
                     key = {index}
                 />

@@ -26,10 +26,11 @@ function Corppants() {
             <div className="cs-container" id="corppants">
                 {csContents.map((content, index) => {
                     return <div className="imgHolder">
-                        <img src={content.imgURL} alt="" className="img-fluid" />
+                        <img src={content.imgURL} alt="" className="imgFluid"  width={"300"} height={"300"}/>
                         <button className="custom-btn1"><a href="https://wa.me/c/2349065813508">
                             {content.firstButton}
                         </a> </button>
+                        <div className="darkOverlay"></div>
                     </div>
                 })}
             </div>

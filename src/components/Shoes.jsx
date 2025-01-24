@@ -26,7 +26,8 @@ function Shoes() {
             <div className="cs-container" id="shoes">
                 {csContents.map((content, index) => {
                     return <div className="imgHolder">
-                        <img src={content.imgURL} alt="" className="img-fluid" />
+                        <img src={content.imgURL} alt="" className="imgFluid" />
+                        <div className="darkOverlay"></div>
                     </div>
                 })}
             </div>

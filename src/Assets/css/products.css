@@ -52,6 +52,18 @@
 
 /* for small devices starts here */
 
+@media (max-width: 399.999px){
+    .btn{
+        font-size:3vw ;
+        margin-right: 4%;
+        margin-left: 1%;
+        width: 13vw;
+        height: 4vh;
+        position: relative;
+        top: 5px;
+        padding: 2px;
+    }
+}
 @media (min-width: 400px) and (max-width: 651.399px) {
     .btn{
         width: 15vw;

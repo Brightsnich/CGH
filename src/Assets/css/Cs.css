@@ -1,22 +1,54 @@
-.cs-container{
+.cs-container {
     position: relative;
     display: flex;
     gap: 2vw;
 }
-.cs-container .img-fluid{
+
+.imgFluid {
     width: 100%;
-    height: auto;
+    height: 100%;
+    border-radius: 2%;
 }
-.imgHolder{
+
+.imgHolder:hover {
+    width: 37%;
+    transition: 200ms;
+}
+
+.imgHolder {
     position: relative;
     width: 35%;
+    height: 100%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    border-radius: 2%;
 }
-.custom-btn1{
+
+.darkOverlay {
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    border-radius: 2%;
+}
+
+.custom-btn1 {
+    border: 1px solid #0f75bd;
     position: absolute;
     top: 90%;
     left: 38%;
+    background-color: #000;
+    z-index: 100;
 }
-.custom-btn2{
+
+.custom-btn1:hover {
+    background-color: transparent;
+    transition: 200ms;
+}
+
+.custom-btn2 {
     position: absolute;
     top: 105%;
     left: 36.5%;
@@ -24,153 +56,181 @@
     position: absolute;
     text-transform: uppercase;
     font-weight: bold;
+    font-size: small;
+    cursor: text;
 }
-a{
+
+a {
     color: #0f75bd;
     text-decoration: none;
     font-weight: bolder;
 }
-@media (min-width: 1025px){
-    .cs-container{
+a:hover{
+    font-size: large;
+    transition: 200ms;
+}
+
+@media (min-width: 1025px) {
+    .cs-container {
         margin: 2%;
         text-align: center;
     }
-    .cs-container .img-fluid{
-        border-radius: 15px;
-        width: 100%;
-        height: auto;
-        margin: 8% 0% 8% 0%;
-    }
-    .custom-btn1{
+
+    .custom-btn1 {
         border: 1px solid #0f75bd;
-        background-color: transparent;
-        color: #fff;
         width: 100%;
-        height:70px ;
-        top:65%;
+        height: 70px;
+        top: 65%;
         left: 0%;
         text-transform: capitalize;
 
     }
-    .custom-btn2{
+
+    .custom-btn2 {
         border: none;
         background-color: transparent;
         color: #fff;
         width: 100%;
-        height:80px ;
+        height: 80px;
         position: absolute;
         top: 93%;
         left: 0%;
         text-transform: uppercase;
         font-weight: bold;
-    }    
+    }
 }
-@media (min-width: 800px) and (max-width: 1024.999px){
-    .cs-container{
+
+@media (min-width: 800px) and (max-width: 1024.999px) {
+    .cs-container {
         margin: 2%;
         text-align: center;
     }
-    .cs-container .img-fluid{
-        border-radius: 15px;
+
+    .custom-btn1 {
         width: 100%;
-        height: auto;
-        margin: 8% 0% 8% 0%;
-    }
-    .custom-btn1{
-        border: 1px solid #0f75bd;
-        background-color: transparent;
-        color: #fff;
-        width: 100%;
-        height:40px ;
-        top:65%;
+        height: 60px;
+        top: 65%;
         left: 0%;
-        text-transform: capitalize;
 
     }
-    .custom-btn2{
+
+    .custom-btn2 {
         border: none;
         background-color: transparent;
         color: #fff;
         width: 100%;
-        height:40px ;
+        height: 40px;
         position: absolute;
         top: 93%;
         left: 0%;
         text-transform: uppercase;
         font-weight: bold;
-    }    
+        margin-top: 6%;
+    }
 }
-@media (min-width: 400px) and (max-width: 651.399px){
-    .cs-container{
+
+@media (max-width: 399.999px){
+    .cs-container {
         display: block;
         margin: 2%;
         text-align: center;
     }
-    .cs-container .img-fluid{
-        border-radius: 15px;
-        width: 100%;
-        height: auto;
-        margin: 8% 0% 8% 0%;
-    }
-    .imgHolder{
+
+    .imgHolder {
         position: relative;
         width: 50%;
         left: 25%;
+        margin-top: 12%;
     }
-    .custom-btn1{
-        border-radius: 15px;
-        border: 1px solid #0f75bd;
-        background-color: transparent;
-        color: #fff;
-        width: 100%;
-        height:40px ;
-        position: absolute;
-        top:65%;
-        left: 0%;
-        text-transform: capitalize;
 
+    .custom-btn1 {
+        border-radius: 15px;
+        width: 100%;
+        height: 30px;
+        position: absolute;
+        top: 60%;
+        left: 0%;
     }
-    .custom-btn2{
+
+    .custom-btn2 {
         background-color: transparent;
         width: 100%;
-        height:40px ;
-        top: 93%;
+        height: 40px;
+        top: 90%;
         left: 0%;
         padding-bottom: 10px;
-    }    
+        margin-top: 8%;
+        font-size: small;
+    }
+
 }
-@media (min-width: 651.4px) and (max-width: 799.999px) {
-    .cs-container{
+@media (min-width: 400px) and (max-width: 651.399px) {
+    .cs-container {
+        display: block;
         margin: 2%;
         text-align: center;
     }
-    .cs-container .img-fluid{
+    .imgHolder:hover {
+        width: 55%;
+    }
+    
+    .imgHolder {
+        position: relative;
+        width: 50%;
+        left: 25%;
+        margin-top: 6%;
+    }
+
+    .custom-btn1 {
         border-radius: 15px;
         width: 100%;
-        height: auto;
-        margin: 8% 0% 8% 0%;
-    }
-    .custom-btn1{
-        border: 1px solid #0f75bd;
-        background-color: transparent;
-        color: #fff;
-        width: 100%;
-        height:40px ;
-        top:65%;
+        height: 40px;
+        position: absolute;
+        top: 65%;
         left: 0%;
-        text-transform: capitalize;
+    }
+
+    .custom-btn2 {
+        background-color: transparent;
+        width: 100%;
+        height: 40px;
+        top: 93%;
+        left: 0%;
+        padding-bottom: 10px;
+        margin-top: 6%;
+        font-size: small;
+    }
+}
+
+@media (min-width: 651.4px) and (max-width: 799.999px) {
+    .cs-container {
+        margin: 2%;
+        text-align: center;
+    }
+
+    .imgHolder {
+        margin-top: 6%;
+    }
+
+    .custom-btn1 {
+        width: 100%;
+        height: 40px;
+        top: 65%;
+        left: 0%;
 
     }
-    .custom-btn2{
+
+    .custom-btn2 {
         border: none;
         background-color: transparent;
         color: #fff;
         width: 100%;
-        height:40px ;
+        height: 40px;
         position: absolute;
         top: 93%;
         left: 0%;
         text-transform: uppercase;
         font-weight: bold;
-    }    
+        margin-top: 10%;
+    }
 }

@@ -32,19 +32,26 @@
     top: 108px;
     display: flex;
     z-index: 1;
+    width: 100%;
 }
 
 .B {
     position: absolute;
-    width: 60%;
+    width: 50%;
     height: 700px;
     top: -300px;
-    right: -160px;
+    margin: 0% 48% 0% 48%;
 }
 
 .banner-pic {
     width: 100%;
     height: 100%;
+}
+
+.A{
+    position: absolute;
+    top: 0px;
+    margin: 0% 1% 0% 1%;
 }
 
 .banner-contents h1 {
@@ -58,7 +65,7 @@
     top: 100px;
     font-size: 2.8vw;
     font-weight: bold;
-    line-height: 30%;
+    line-height: 45%;
 }
 
 .boxes {
@@ -98,153 +105,67 @@
     text-decoration: none;
 }
 
-
-@media (min-width: 400px) and (max-width: 651.3px) {
-    .btn {
-        top: 150px;
-        width: 110px;
-        height: 40px;
-        font-size: 16px;
+@media (max-width: 399.999px){
+    .A{
+        top: -10px;
+        margin: 0% -2.5% 0% -2.5%;
     }
-
-    .banner-pic {
-        width: 350%;
-        height: 100%;
-        border-radius: 20px;
-    }
-
-    .B {
-        width: 60%;
-        height: 550px;
-        top: -300px;
-        right: -5vw;
-    }
-}
-@media (min-width: 550px) and (max-width: 651.399px) {
-    .B {
-        width: 60%;
-        height: 550px;
-        top: -300px;
-        right: -9vw;
-    }
-}
-@media (min-width: 651.4px) and (max-width: 700.999px) {
-    .btn {
-        top: 170px;
+    .A .btn {
+        top: -15px;
         width: 120px;
-        height: 42px;
-        font-size: 18px;
-    }
-
-    .banner-pic {
-        width: 350%;
-        height: 100%;
-        border-radius: 20px;
-    }
-
-    .B {
-        width: 70%;
-        height: 550px;
-        top: -300px;
-        right: -22vw;
-    }
-}
-@media (min-width: 701px) and (max-width: 799.999px) {
-    .btn {
-        top: 170px;
-        width: 120px;
-        height: 42px;
-        font-size: 18px;
-    }
-
-    .banner-pic {
-        width: 350%;
-        height: 100%;
-        border-radius: 20px;
-    }
-
-    .B {
-        width: 70%;
-        height: 550px;
-        top: -300px;
-        right: -25vw;
-    }
-}
-
-
-
-@media (min-width: 800px) and (max-width: 1024.999px) {
-    .btn {
-        top: 190px;
-        width: 125px;
         height: 45px;
         font-size: 20px;
     }
+    .B{
+        width: 66%;
+        height: 550px;
+        margin: 0% 30% 0% 30%;    
+    }
+}
+@media (min-width: 400px) and (max-width: 651.399px) {
+    .A{
+        top: -10px;
+        margin: 0% -2.5% 0% -2.5%;
+    }
+    .A .btn {
+        top: -15px;
+        width: 130px;
+        height: 45px;
+        font-size: 20px;
+    }
+    .B{
+        width: 66%;
+        height: 550px;
+        margin: 0% 30% 0% 30%;    
+    }
 
-    .B {
-        width: 70%;
+}
+@media (min-width: 651.4px) and (max-width: 799.999px) {
+    .A{
+        top: -10px;
+    }
+    .A .btn {
+        top: -15px;
+        width: 150px;
+        height: 45px;
+        font-size: 20px;
+    }
+    .B{
+        width: 60%;
+        height: 550px;
+        margin: 0% 37% 0% 37%;    
+    }
+}
+@media (min-width: 800px) and (max-width: 1024.999px) {
+    .A .btn {
+        top: -5px;
+        width: 170px;
+        height: 45px;
+        font-size: 20px;
+    }
+    .B{
+        width: 50%;
         height: 600px;
-        top: -300px;
-        right: -17vw;
+        margin: 0% 48% 0% 48%;    
     }
 }
-
-@media (min-width:900px) and (max-width: 990.999px){
-    .B {
-        width: 70%;
-        height: 600px;
-        top: -300px;
-        right: -25vw;
-    }
-}
-@media (min-width:991px) and (max-width: 1024.999px){
-    .B {
-        width: 60%;
-        height: 600px;
-        top: -300px;
-        right: -80px;
-    }
-}
-@media (min-width: 1060px) and (max-width: 1150.999px) {
-    .B {
-        position: absolute;
-        width: 60%;
-        height: 700px;
-        top: -300px;
-        right: -10px;
-    }
-}
-
-@media (min-width: 1025px) and (max-width: 1150.999px){
-    .banner-contents h1 {
-        padding-top: calc(var(--padding-top) + 20px);
-    }
-    .boxes {
-        top: -70px;
-    }
-    .btn {
-        top: 260px;
-    }
-    .banner-contents p {
-        font-size: 2.5vw;
-        line-height: 60%;
-    }
-    .B {
-        position: absolute;
-        width: 60%;
-        height: 700px;
-        top: -300px;
-        right: -120px;
-    }
-}
-
-@media (min-width: 1125px) and (max-width: 1150.999px) {
-    .B {
-        position: absolute;
-        width: 60%;
-        height: 700px;
-        top: -300px;
-        right: -200px;
-    }
-}
-

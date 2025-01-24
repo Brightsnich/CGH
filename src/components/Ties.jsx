@@ -26,10 +26,12 @@ function Ties() {
             <div className="ties-container" id="ties">
                 {csContents.map((content, index) => {
                     return <div className="ties_imgHolder">
-                        <img src={content.imgURL} alt="" className="img-fluid" />
+                        <img src={content.imgURL} alt="" className="imgFluid" />
                         <button className="ties-custom-btn1"><a href="https://wa.me/c/2349065813508">
                             {content.firstButton}
                         </a></button>
+                        <div className="tiesdarkOverlay"></div>
+
                         <button className="ties-custom-btn2">{content.secondButton}</button>
                     </div>
                 })}

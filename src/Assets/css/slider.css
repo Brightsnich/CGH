@@ -42,3 +42,20 @@
 .slick-slide div{
     margin: 0.3rem;
 }
+
+@media (max-width: 399.999px){
+    .slideContainer{
+        height: calc(var(--sliderHeight) + 10vh);
+        border-radius: 15px;
+    }
+    .slideContainer p{
+        font-size: calc(var(--width) / 20);
+        top: 90px;
+        margin-left: 40px ;
+        margin-right: 40px;
+    }
+    .material-symbols-outlined{
+        top: calc(var(--top) + 45px);
+    }
+    
+}

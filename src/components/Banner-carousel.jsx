@@ -10,7 +10,7 @@ function Banner() {
                 return <div>
                     <img src={bannerbg} class="img-fluid first-image" alt="Show pic" />
                     <div className="color-overlay"></div>
-                    <div class="container banner-contents px-5">
+                    <div class="banner-contents px-5">
                         <div class="A">
                             <div className="boxes">
                                 <div className="box1"></div>

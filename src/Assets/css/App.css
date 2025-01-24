@@ -148,6 +148,24 @@ body {
 /* Ends here */
 
 /* for small devices starts here */
+@media (max-width: 399.999px){
+    #home {
+        height: 60vh;
+    }
+    #about {
+        top: 150vw;
+    }
+    #products {
+        top: 1960px;
+    }
+    /* #sizes {
+        top: 460vw;
+    } */
+    #testimonials {
+        margin-top:335vw;
+        margin-bottom: 80px;
+    }
+}
 @media (min-width: 400px) and (max-width: 651.399px) {
     #home {
         height: 60vh;

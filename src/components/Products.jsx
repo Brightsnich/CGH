@@ -20,8 +20,8 @@ function Products() {
                 <div className="products-container">
                     <h3 className="productsH3 px-3">Products</h3>
                     <div className="prductsButtons text-left">
-                        <input type="button" value="Corporate shirts" onClick={handlePage} className="btn" name="corpshirts" />
-                        <input type="button" value="Corporate pants" onClick={handlePage} className="btn" name="corppants" />
+                        <input type="button" value=" shirts" onClick={handlePage} className="btn" name="corpshirts" />
+                        <input type="button" value=" pants" onClick={handlePage} className="btn" name="corppants" />
                         <input type="button" value="Ties" onClick={handlePage} className="btn" name="ties" />
                         <input type="button" value="Shoes" onClick={handlePage} className="btn" name="shoes" />
                     </div>

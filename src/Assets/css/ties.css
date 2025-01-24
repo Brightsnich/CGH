@@ -4,22 +4,45 @@
     position: relative;
 }
 
-.ties-container .img-fluid {
+.ties-container .imgFluid {
     width: 100%;
-    height: auto;
-    opacity: 1;
+    height: 100%;
+    border-radius: 2%;
+}
+.ties_imgHolder:hover{
+    width: 37%;
+    transition: 200ms;
 }
 
 .ties_imgHolder {
     position: relative;
     width: 35%;
+    height: 100%;
+    margin-top: 4%;
+    border-radius: 2%;
+}
+.tiesdarkOverlay{
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    border-radius: 2%;
 }
 
 .ties-custom-btn1 {
     position: absolute;
     top: 85%;
     left: 38%;
+    background-color: #000;
+    z-index: 100;
 }
+.ties-custom-btn1:hover{
+    background-color: transparent;
+    transition: 200ms;
+}
+
 
 .ties-custom-btn2 {
     position: absolute;
@@ -37,24 +60,13 @@
         margin: 2%;
         text-align: center;
     }
-
-    .ties-container .img-fluid {
-        border-radius: 15px;
-        width: 100%;
-        height: auto;
-        margin: 8% 0% 8% 0%;
-    }
-
     .ties-custom-btn1 {
         border: 1px solid #0f75bd;
-        background-color: transparent;
-        color: #fff;
         width: 100%;
         height: 70px;
         top: 65%;
         left: 0%;
         text-transform: capitalize;
-
     }
 
     .ties-custom-btn2 {
@@ -77,23 +89,13 @@
         text-align: center;
     }
 
-    .ties-container .img-fluid {
-        border-radius: 15px;
-        width: 100%;
-        height: auto;
-        margin: 8% 0% 8% 0%;
-    }
-
     .ties-custom-btn1 {
         border: 1px solid #0f75bd;
-        background-color: transparent;
-        color: #fff;
         width: 100%;
-        height: 40px;
+        height: 60px;
         top: 65%;
         left: 0%;
         text-transform: capitalize;
-
     }
 
     .ties-custom-btn2 {
@@ -107,6 +109,42 @@
         left: 0%;
         text-transform: uppercase;
         font-weight: bold;
+        margin-top: 6%;
+    }
+}
+
+@media (max-width: 399.999px){
+    .ties-container {
+        display: block;
+        margin: 2%;
+        text-align: center;
+    }
+
+    .ties_imgHolder {
+        position: relative;
+        width: 50%;
+        left: 25%;
+        margin-top: 12%;
+    }
+
+    .ties-custom-btn1 {
+        border-radius: 15px;
+        width: 100%;
+        height: 30px;
+        position: absolute;
+        top: 60%;
+        left: 0%;
+    }
+
+    .ties-custom-btn2 {
+        background-color: transparent;
+        width: 100%;
+        height: 40px;
+        top: 90%;
+        left: 0%;
+        padding-bottom: 10px;
+        margin-top: 8%;
+        font-size: small;
     }
 }
 
@@ -117,31 +155,22 @@
         text-align: center;
     }
 
-    .ties-container .img-fluid {
-        border-radius: 15px;
-        width: 100%;
-        height: auto;
-        margin: 8% 0% 8% 0%;
-    }
-
     .ties_imgHolder {
         position: relative;
         width: 50%;
         left: 25%;
+        margin-top: 6%;
     }
 
     .ties-custom-btn1 {
         border-radius: 15px;
         border: 1px solid #0f75bd;
-        background-color: transparent;
-        color: #fff;
         width: 100%;
         height: 40px;
         position: absolute;
         top: 65%;
         left: 0%;
         text-transform: capitalize;
-
     }
 
     .ties-custom-btn2 {
@@ -151,6 +180,7 @@
         top: 93%;
         left: 0%;
         padding-bottom: 10px;
+        margin-top: 6%;
     }
 }
 
@@ -160,23 +190,13 @@
         text-align: center;
     }
 
-    .ties-container .img-fluid {
-        border-radius: 15px;
-        width: 100%;
-        height: auto;
-        margin: 8% 0% 8% 0%;
-    }
-
     .ties-custom-btn1 {
         border: 1px solid #0f75bd;
-        background-color: transparent;
-        color: #fff;
         width: 100%;
         height: 40px;
         top: 65%;
         left: 0%;
         text-transform: capitalize;
-
     }
 
     .ties-custom-btn2 {
@@ -190,5 +210,7 @@
         left: 0%;
         text-transform: uppercase;
         font-weight: bold;
+        margin-top: 10%;
+
     }
 }
