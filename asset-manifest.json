@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/CGH/static/css/main.555e3baa.css",
+    "main.js": "/CGH/static/js/main.a09d4378.js",
+    "static/media/patterned ties3.jpg": "/CGH/static/media/patterned ties3.fb3e2a51dfd9db67f7bd.jpg",
+    "static/media/CALSNICH FLYER.png": "/CGH/static/media/CALSNICH FLYER.75f9e1c87af5547e19cb.png",
+    "static/media/ASH 1.png": "/CGH/static/media/ASH 1.afebb1ebe1a11f6d0038.png",
+    "static/media/Patterned Shirt.jpg": "/CGH/static/media/Patterned Shirt.9c5b3254c228acfe8d47.jpg",
+    "static/media/vintage ties.jpg": "/CGH/static/media/vintage ties.bd00f560ab3d4c4b4fc5.jpg",
+    "static/media/vintage shirt3.jpeg": "/CGH/static/media/vintage shirt3.d57072badd5bbca12f16.jpeg",
+    "static/media/blueCropped (1).png": "/CGH/static/media/blueCropped (1).74c4791467e938b51dbc.png",
+    "static/media/blueCropped (2).png": "/CGH/static/media/blueCropped (2).586bdeca6302bfaed9f7.png",
+    "static/media/elegance2.jpeg": "/CGH/static/media/elegance2.9522be28d46feb43881a.jpeg",
+    "static/media/Trouser4.jpeg": "/CGH/static/media/Trouser4.9477b8d18eb32fe0477c.jpeg",
+    "static/media/Plain Shirt.jpg": "/CGH/static/media/Plain Shirt.c2c5c2eb183a97c5e42d.jpg",
+    "static/media/coming soon.webp": "/CGH/static/media/coming soon.2d9bf96feac4a65fc1d4.webp",
+    "static/media/Trouser1.webp": "/CGH/static/media/Trouser1.d48a13f0da063c400371.webp",
+    "static/media/professionality.webp": "/CGH/static/media/professionality.60342e2f526960d1efe7.webp",
+    "static/media/Plain tie (2).jpg": "/CGH/static/media/Plain tie (2).1669c618c74ad46d2305.jpg",
+    "static/media/Trouser3.jpeg": "/CGH/static/media/Trouser3.fb3e3592469216852718.jpeg",
+    "static/media/slick.svg": "/CGH/static/media/slick.2630a3e3eab21c607e21.svg",
+    "index.html": "/CGH/index.html",
+    "static/media/slick.eot": "/CGH/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/CGH/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/CGH/static/media/slick.295183786cd8a1389865.woff",
+    "main.555e3baa.css.map": "/CGH/static/css/main.555e3baa.css.map",
+    "main.a09d4378.js.map": "/CGH/static/js/main.a09d4378.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.555e3baa.css",
+    "static/js/main.a09d4378.js"
+  ]
+}
