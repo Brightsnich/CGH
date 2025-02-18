@@ -1,0 +1,175 @@
+.carousel {
+    position: relative;
+    width: 100%;
+    display: flex;
+    background-color: var(--Navbar-color);
+    font-family: "raleway", Arial, Helvetica, sans-serif;
+}
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+
+.carouselBoxes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.active {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: 1.5s ease-out;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    object-fit: cover;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 1);
+}
+
+/* .inactive {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    transition: 1.5s ease-out;
+    animation-name: fade;
+    animation-duration: 1.5s;
+} */
+
+.bannerContents{
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 6rem;
+
+}
+.boxes {
+    animation: appear 0.7s linear;
+    position: relative;
+    margin-bottom: 8rem;
+}
+@media(max-width: 360px){
+    .bannerContents{
+        align-items: center;
+    }
+}
+
+.box1 {
+    position: relative;
+    z-index: 1;
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--Navbar-color);
+}
+
+.box2 {
+    position: absolute;
+    top: 15px;
+    z-index: 0;
+    left: 15px;
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--btn-color);
+}
+.text{
+    animation: appear 0.7s linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding: 0% 1rem;
+}
+.h1{
+    font-size: clamp(1.5rem, 4vw, 5rem);
+    line-height: 90%;
+    text-align: center;
+    
+}
+.p{
+    text-align: center;
+    font-size: clamp(1rem, 2vw, 2.5rem);
+    margin-top:1.5rem;
+    margin-bottom:1.5rem;
+    font-weight: bold ;
+}
+.btn {
+    background-color: var(--btn-color);
+    width: 40%;
+    height: 30%;
+    font-size: clamp(0.8rem, 1vw, 1.5rem);
+    color: var(--Navbar-color);
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+    transition: all 200ms ease-in-out;
+}
+.btn:hover{
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 1);
+    transform: scale(1.02);
+}
+
+.overlay{
+    position: absolute;
+    background: rgba(48, 51, 53, 0.8);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.carouselControls {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    padding: 0 .5rem;
+}
+
+.carouselControl {
+    padding: .1rem .5rem;
+    border-radius: 20rem;
+    border: none;
+    font-size: larger;
+    text-shadow: 2px 2px #000;
+    color: var(--Navbar-color);
+    background-color: #000;
+    cursor: pointer;
+    transition: all ease 200ms;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.carouselControl:hover {
+    transform: scale(1.08);
+}
+
+.carouselControl.b {
+    margin-left: auto;
+}
+
+

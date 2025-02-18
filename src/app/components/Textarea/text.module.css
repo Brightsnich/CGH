@@ -1,0 +1,11 @@
+.text {
+    width: 100%;
+    position: relative;
+}
+
+.text p {
+    padding: 3rem 4rem;
+    text-align: center;
+    font-size: clamp(0.5rem, 2vw, 3rem);
+}
+

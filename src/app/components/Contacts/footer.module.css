@@ -1,0 +1,89 @@
+.footer {
+    background-color: #000;
+    min-height: 40vh;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.error{
+    color: red;
+    position: absolute;
+    top: 53%;
+}
+.success{
+    color: green;
+    position: absolute;
+    top: 52%;
+}
+.contact{
+    padding: 2rem 3rem;
+    text-align: center;
+}
+.imgFluid{
+    object-fit: cover;
+    width: fit-content;
+    height: auto;
+}
+
+.box{
+    padding: 1rem;
+}
+.footerText{
+    font-size: clamp(1rem, 1.5vw, 3rem);
+    color: #fff;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.input{
+    width: 70%;
+    height: 8vh;
+    border: none;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+    padding: 2%;
+    font-size: clamp(1rem, 1vw, 2rem);
+    transition: 300ms ease-in-out;
+}
+
+.btn{
+    border: none;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+    width:  30%;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+}
+.input:hover{
+    transform: scale(1.05);
+    border: 2px solid blue;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    border: 2px solid blue;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.a{
+    text-decoration: none;
+    color: aliceblue;
+    transition: 200ms ease-in-out;
+}
+.a:Hover{
+    font-size: larger;
+    color: #817a7a;
+}

@@ -1,0 +1,93 @@
+.csContainer {
+    position: relative;
+    display: flex;
+    gap: 2vw;
+}
+
+@media (max-width: 800px){
+    .csContainer{
+        display: block;
+    }
+}
+
+.imgFluid {
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+    display: block;
+    object-fit: cover;
+}
+.imgHolder {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    height: 100%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    border-radius: 2%;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4);
+    transition: all 200ms ease-in-out;
+}
+
+.imgHolder:hover{
+    box-shadow: 2px 4px 6px;
+    transform: scale(1.03);
+}
+@media (max-width:800px){
+    .imgHolder{
+        width: 100%;
+        margin-top: 12%;
+        margin-bottom: 12%;
+    
+    }
+}
+.customBtn1 {
+    border: 1px solid #0f75bd;
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #000;
+    z-index: 100;
+    text-align: center;
+    transition: all 200ms ease-in-out;
+}
+.customBtn1:hover{
+    background-color: transparent;
+}
+.customBtn2 {
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%);
+    border: none;
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: clamp(0.5rem, 1vw, 1rem);
+    cursor: text;
+    background-color: transparent;
+}
+.a {
+    color: #0f75bd;
+    text-decoration: none;
+    font-weight: bolder;
+    transition: all 200ms ease-in-out;
+}
+.a:hover{
+    font-size: large;
+}
+
+.darkOverlay {
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    border-radius: 2%;
+}
+
