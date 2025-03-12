@@ -3,7 +3,7 @@ import React from 'react'
 import style from './carousel.module.css';
 import Image from 'next/image';
 import image2 from './CALSNICH FLYER.png';
-import { useRef, useEffect, useState } from 'react';
+// import { useRef, useEffect, useState } from 'react';
 
 
 export const Carousel = () => {
@@ -14,49 +14,49 @@ export const Carousel = () => {
     };
 
 
-    const [currentSlide, setCurrentSlide] = useState(0);
-    const targetElementsRef = useRef<HTMLDivElement[]>([]);
+    // const [currentSlide, setCurrentSlide] = useState(0);
+    // const targetElementsRef = useRef<HTMLDivElement[]>([]);
 
 
-    useEffect(() => {
-        const generatedClassName = style.target;
-        const elements = document.querySelectorAll(`.${generatedClassName}`);
-        targetElementsRef.current = Array.from(elements) as HTMLDivElement[];
+    // useEffect(() => {
+    //     const generatedClassName = style.target;
+    //     const elements = document.querySelectorAll(`.${generatedClassName}`);
+    //     targetElementsRef.current = Array.from(elements) as HTMLDivElement[];
 
-        // Set the initial active slide (after elements are in the ref)
-        if (elements.length > 0) {
-            elements[currentSlide].classList.add('active');
-        }
+    //     // Set the initial active slide (after elements are in the ref)
+    //     if (elements.length > 0) {
+    //         elements[currentSlide].classList.add('active');
+    //     }
 
-        return () => { // Cleanup (important!)
-            targetElementsRef.current.forEach(element => {
-                element.classList.remove('active');
-                element.classList.remove('inactive');
-            });
-        };
-    }, []); // Empty dependency array ensures this runs only once
+    //     return () => { // Cleanup (important!)
+    //         targetElementsRef.current.forEach(element => {
+    //             element.classList.remove('active');
+    //             element.classList.remove('inactive');
+    //         });
+    //     };
+    // }, []); // Empty dependency array ensures this runs only once
 
-    const showSlide = (newV: number) => {
-        console.log(currentSlide);
-        console.log(newV);
-        if (targetElementsRef.current.length === 0) return; // Guard clause
+    // const showSlide = (newV: number) => {
+    //     console.log(currentSlide);
+    //     console.log(newV);
+    //     if (targetElementsRef.current.length === 0) return; // Guard clause
 
-        targetElementsRef.current[currentSlide].classList.remove(style.active);
-        targetElementsRef.current[currentSlide].classList.add(style.inactive);
-        targetElementsRef.current[newV].classList.remove(style.inactive);
-        targetElementsRef.current[newV].classList.add(style.active);
-        setCurrentSlide(newV);
-    };
+    //     targetElementsRef.current[currentSlide].classList.remove(style.active);
+    //     targetElementsRef.current[currentSlide].classList.add(style.inactive);
+    //     targetElementsRef.current[newV].classList.remove(style.inactive);
+    //     targetElementsRef.current[newV].classList.add(style.active);
+    //     setCurrentSlide(newV);
+    // };
 
-    const prevSlide = () => {
-        const newSlide = (currentSlide - 1 + targetElementsRef.current.length) % targetElementsRef.current.length;
-        showSlide(newSlide);
-    };
+    // const prevSlide = () => {
+    //     const newSlide = (currentSlide - 1 + targetElementsRef.current.length) % targetElementsRef.current.length;
+    //     showSlide(newSlide);
+    // };
 
-    const nextSlide = () => {
-        const newSlide = (currentSlide + 1) % targetElementsRef.current.length;
-        showSlide(newSlide);
-    };
+    // const nextSlide = () => {
+    //     const newSlide = (currentSlide + 1) % targetElementsRef.current.length;
+    //     showSlide(newSlide);
+    // };
 
     return (
         <div id="home" className={style.carousel}>

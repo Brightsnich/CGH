@@ -3,7 +3,7 @@ import React from 'react';
 import style from './testimonial.module.css';
 import { StarIcon } from '@heroicons/react/24/outline';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation'; // Import navigation styles
 import 'swiper/css/pagination'; // Import pagination styles

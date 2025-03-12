@@ -57,7 +57,7 @@ export const Footer = () => {
         <Image className={style.imgFluid} src={image} alt="Calsnich Logo" width="100" height="100" />
         <div className={style.box}>
           <p className={style.footerText}> Subscribe to our newsletter and get </p>
-          <p className={style.footerText}> updates on our Men's life hack and promotional offers</p>
+          <p className={style.footerText}> updates on our Men&apos;s life hack and promotional offers</p>
         </div>
         <form className={style.form} onSubmit={handleSubmit} >
           <input value={email} name="email" className={style.input} type="email" onChange={(e) => setEmail(e.target.value)} id="subscription" placeholder="Type your email" required />
