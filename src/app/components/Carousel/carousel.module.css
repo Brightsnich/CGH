@@ -3,6 +3,7 @@
     width: 100%;
     display: flex;
     background-color: var(--Navbar-color);
+    color: var(--Navbar-color);
     font-family: "raleway", Arial, Helvetica, sans-serif;
 }
 @keyframes appear {

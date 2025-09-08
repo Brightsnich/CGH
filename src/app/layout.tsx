@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: { // For social media sharing
     title: "Calsnich Gentlemen Home",
     description: "At Calsnich gentlemen's home, we cause men to believe in themselves and dreams by speaking to confidence, composure, and courage in every item we sell(clothings)",
-    url: "https://www.yourwebsite.com", // Add URL
+    url: "https://www.calsnich.com", // Add URL
     type: "website", // Add type
     // ... other Open Graph properties
   },
